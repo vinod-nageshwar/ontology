@@ -1,0 +1,413 @@
+@prefix : <http://www.semanticweb.org/vinod/ontologies/2026/6/northwind/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix northwind: <http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#> .
+@base <http://www.semanticweb.org/vinod/ontologies/2026/6/northwind/> .
+
+<http://www.semanticweb.org/vinod/ontologies/2026/6/northwind> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#belongsto
+northwind:belongsto rdf:type owl:ObjectProperty ;
+                    rdfs:domain northwind:Product ;
+                    rdfs:range northwind:Category .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#reportsto
+northwind:reportsto rdf:type owl:ObjectProperty ;
+                    rdfs:domain northwind:Employee ;
+                    rdfs:range northwind:Employee .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#supplies
+northwind:supplies rdf:type owl:ObjectProperty ;
+                   rdfs:domain northwind:Supplier ;
+                   rdfs:range northwind:Product .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:range northwind:Product .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#address
+northwind:address rdf:type owl:DatatypeProperty ;
+                  rdfs:domain northwind:Location ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#birth_date
+northwind:birth_date rdf:type owl:DatatypeProperty ;
+                     rdfs:domain northwind:Employee ;
+                     rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category_description
+northwind:category_description rdf:type owl:DatatypeProperty ;
+                               rdfs:domain northwind:Category ;
+                               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category_id
+northwind:category_id rdf:type owl:DatatypeProperty ;
+                      rdfs:domain northwind:Category ;
+                      rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category_name
+northwind:category_name rdf:type owl:DatatypeProperty ;
+                        rdfs:domain northwind:Category ;
+                        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#city
+northwind:city rdf:type owl:DatatypeProperty ;
+               rdfs:domain northwind:Location ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#company_name
+northwind:company_name rdf:type owl:DatatypeProperty ;
+                       rdfs:domain northwind:Customer ,
+                                   northwind:Supplier ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#contact_name
+northwind:contact_name rdf:type owl:DatatypeProperty ;
+                       rdfs:domain northwind:Customer ,
+                                   northwind:Supplier ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#contact_title
+northwind:contact_title rdf:type owl:DatatypeProperty ;
+                        rdfs:domain northwind:Customer ,
+                                    northwind:Supplier ;
+                        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#country
+northwind:country rdf:type owl:DatatypeProperty ;
+                  rdfs:domain northwind:Location ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#customer_id
+northwind:customer_id rdf:type owl:DatatypeProperty ;
+                      rdfs:domain northwind:Customer ;
+                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#discontinued
+northwind:discontinued rdf:type owl:DatatypeProperty ;
+                       rdfs:domain northwind:Product ;
+                       rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#employee_id
+northwind:employee_id rdf:type owl:DatatypeProperty ;
+                      rdfs:domain northwind:Employee ;
+                      rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#extension
+northwind:extension rdf:type owl:DatatypeProperty ;
+                    rdfs:domain northwind:Employee ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#fax
+northwind:fax rdf:type owl:DatatypeProperty ;
+              rdfs:domain northwind:Customer ,
+                          northwind:Supplier ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#first_name
+northwind:first_name rdf:type owl:DatatypeProperty ;
+                     rdfs:domain northwind:Employee ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#hire_date
+northwind:hire_date rdf:type owl:DatatypeProperty ;
+                    rdfs:domain northwind:Employee ;
+                    rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#home_phone
+northwind:home_phone rdf:type owl:DatatypeProperty ;
+                     rdfs:domain northwind:Employee ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#job_title
+northwind:job_title rdf:type owl:DatatypeProperty ;
+                    rdfs:domain northwind:Employee ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#last_name
+northwind:last_name rdf:type owl:DatatypeProperty ;
+                    rdfs:domain northwind:Employee ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#notes
+northwind:notes rdf:type owl:DatatypeProperty ;
+                rdfs:domain northwind:Employee ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#phone
+northwind:phone rdf:type owl:DatatypeProperty ;
+                rdfs:domain northwind:Customer ,
+                            northwind:Supplier ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product_id
+northwind:product_id rdf:type owl:DatatypeProperty ;
+                     rdfs:domain northwind:Product ;
+                     rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product_name
+northwind:product_name rdf:type owl:DatatypeProperty ;
+                       rdfs:domain northwind:Product ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#quantity_per_unit
+northwind:quantity_per_unit rdf:type owl:DatatypeProperty ;
+                            rdfs:domain northwind:Product ;
+                            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#region
+northwind:region rdf:type owl:DatatypeProperty ;
+                 rdfs:domain northwind:Location ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#reorder_level
+northwind:reorder_level rdf:type owl:DatatypeProperty ;
+                        rdfs:domain northwind:Product ;
+                        rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#state
+northwind:state rdf:type owl:DatatypeProperty ;
+                rdfs:domain northwind:Location ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#supplier_id
+northwind:supplier_id rdf:type owl:DatatypeProperty ;
+                      rdfs:domain northwind:Supplier ;
+                      rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#title_of_courtesy
+northwind:title_of_courtesy rdf:type owl:DatatypeProperty ;
+                            rdfs:domain northwind:Employee ;
+                            rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#unit_price
+northwind:unit_price rdf:type owl:DatatypeProperty ;
+                     rdfs:domain northwind:Product ;
+                     rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#units_in_stock
+northwind:units_in_stock rdf:type owl:DatatypeProperty ;
+                         rdfs:domain northwind:Product ;
+                         rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#units_on_order
+northwind:units_on_order rdf:type owl:DatatypeProperty ;
+                         rdfs:domain northwind:Product ;
+                         rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#website
+northwind:website rdf:type owl:DatatypeProperty ;
+                  rdfs:domain northwind:Supplier ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#zip_code
+northwind:zip_code rdf:type owl:DatatypeProperty ;
+                   rdfs:domain northwind:Location ;
+                   rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Category
+northwind:Category rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Customer
+northwind:Customer rdf:type owl:Class ;
+                   rdfs:subClassOf northwind:Organization .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee
+northwind:Employee rdf:type owl:Class ;
+                   rdfs:subClassOf northwind:Person .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Location
+northwind:Location rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Organization
+northwind:Organization rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Person
+northwind:Person rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Product
+northwind:Product rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Supplier
+northwind:Supplier rdf:type owl:Class ;
+                   rdfs:subClassOf northwind:Organization .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category1
+northwind:category1 rdf:type owl:NamedIndividual ,
+                             northwind:Category ;
+                    northwind:category_description "Soft drinks, coffees, teas, beers, and ales" ;
+                    northwind:category_id 1 ;
+                    northwind:category_name "Beverages" .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category2
+northwind:category2 rdf:type owl:NamedIndividual ,
+                             northwind:Category ;
+                    northwind:category_description "Sweet and savory sauces, relishes, spreads, and seasonings" ;
+                    northwind:category_id 2 ;
+                    northwind:category_name "Condiments" .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category3
+northwind:category3 rdf:type owl:NamedIndividual ,
+                             northwind:Category ;
+                    northwind:category_description "Desserts, candies, and sweet breads" ;
+                    northwind:category_id 3 ;
+                    northwind:category_name "Confections" .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#employee1
+northwind:employee1 rdf:type owl:NamedIndividual ,
+                             northwind:Employee ;
+                    northwind:reportsto northwind:employee2 ;
+                    northwind:birth_date "1948-12-08T00:00:00"^^xsd:dateTime ;
+                    northwind:employee_id 1 ;
+                    northwind:first_name "Nancy" ;
+                    northwind:job_title "Sales Representative" ;
+                    northwind:last_name "Davolio" ;
+                    northwind:title_of_courtesy "Ms." .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#employee2
+northwind:employee2 rdf:type owl:NamedIndividual ,
+                             northwind:Employee ;
+                    northwind:birth_date "1952-02-19T00:00:00"^^xsd:dateTime ;
+                    northwind:employee_id 2 ;
+                    northwind:first_name "Andrew" ;
+                    northwind:job_title "Vice President, Sales" ;
+                    northwind:last_name "Fuller" ;
+                    northwind:title_of_courtesy "Dr." .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#employee3
+northwind:employee3 rdf:type owl:NamedIndividual ,
+                             northwind:Employee ;
+                    northwind:reportsto northwind:employee3 ;
+                    northwind:birth_date "1963-08-30T00:00:00"^^xsd:dateTime ;
+                    northwind:employee_id 3 ;
+                    northwind:first_name "Janet" ;
+                    northwind:job_title "Sales Representative" ;
+                    northwind:last_name "Leverling" ;
+                    northwind:title_of_courtesy "Ms." .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product1
+northwind:product1 rdf:type owl:NamedIndividual ,
+                            northwind:Product ;
+                   northwind:belongsto northwind:category1 ;
+                   northwind:product_id 1 ;
+                   northwind:product_name "Chai" ;
+                   northwind:quantity_per_unit "10 boxes x 30 bags" .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product2
+northwind:product2 rdf:type owl:NamedIndividual ,
+                            northwind:Product ;
+                   northwind:belongsto northwind:category2 ;
+                   northwind:product_id 2 ;
+                   northwind:product_name "Chang" ;
+                   northwind:quantity_per_unit "24 - 12 oz bottles" .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product3
+northwind:product3 rdf:type owl:NamedIndividual ,
+                            northwind:Product ;
+                   northwind:belongsto northwind:category3 ;
+                   northwind:product_id 3 ;
+                   northwind:product_name "Aniseed Syrup" ;
+                   northwind:quantity_per_unit "12 - 550 ml bottles" .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#supplier1
+northwind:supplier1 rdf:type owl:NamedIndividual ,
+                             northwind:Supplier ;
+                    northwind:supplies northwind:product1 ;
+                    northwind:company_name "Exotic Liquids" ;
+                    northwind:supplier_id 1 ;
+                    northwind:website "Mayumi's (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/mayumi.htm#" .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#supplier2
+northwind:supplier2 rdf:type owl:NamedIndividual ,
+                             northwind:Supplier ;
+                    northwind:supplies northwind:product2 ;
+                    northwind:company_name "New Orleans Cajun Delights" ;
+                    northwind:supplier_id 2 ;
+                    northwind:website "#CAJUN.HTM#" .
+
+
+###  http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#supplier3
+northwind:supplier3 rdf:type owl:NamedIndividual ,
+                             northwind:Supplier ;
+                    northwind:supplies northwind:product3 ;
+                    northwind:company_name "Plutzer Lebensmittelgroßmärkte AG" ;
+                    northwind:supplier_id 12 ;
+                    northwind:website "Plutzer (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/plutzer.htm#" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
