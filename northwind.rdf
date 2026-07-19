@@ -1,0 +1,618 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind/"
+     xml:base="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:northwind="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#belongsto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#belongsto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#reportsto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#reportsto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#supplies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#supplies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Supplier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Product"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#birth_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#birth_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category_description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category_description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Category"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Category"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Category"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#city -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#city">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#company_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#company_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Customer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Supplier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#contact_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#contact_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Customer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Supplier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#contact_title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#contact_title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Customer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Supplier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#country -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#country">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#customer_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#customer_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#discontinued -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#discontinued">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#employee_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#employee_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#extension -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#extension">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#fax -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#fax">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Customer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Supplier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#first_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#hire_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#hire_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#home_phone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#home_phone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#job_title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#job_title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#last_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#notes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#notes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#phone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#phone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Customer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Supplier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#quantity_per_unit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#quantity_per_unit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#region -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#region">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#reorder_level -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#reorder_level">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#state -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#state">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#supplier_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#supplier_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Supplier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#title_of_courtesy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#title_of_courtesy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#unit_price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#unit_price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#units_in_stock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#units_in_stock">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#units_on_order -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#units_on_order">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#website -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#website">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Supplier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#zip_code -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#zip_code">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Category"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Customer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Organization"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Product"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Supplier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Supplier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Category"/>
+        <northwind:category_description>Soft drinks, coffees, teas, beers, and ales</northwind:category_description>
+        <northwind:category_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</northwind:category_id>
+        <northwind:category_name>Beverages</northwind:category_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Category"/>
+        <northwind:category_description>Sweet and savory sauces, relishes, spreads, and seasonings</northwind:category_description>
+        <northwind:category_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</northwind:category_id>
+        <northwind:category_name>Condiments</northwind:category_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Category"/>
+        <northwind:category_description>Desserts, candies, and sweet breads</northwind:category_description>
+        <northwind:category_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</northwind:category_id>
+        <northwind:category_name>Confections</northwind:category_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#employee1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#employee1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee"/>
+        <northwind:reportsto rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#employee2"/>
+        <northwind:birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1948-12-08T00:00:00</northwind:birth_date>
+        <northwind:employee_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</northwind:employee_id>
+        <northwind:first_name>Nancy</northwind:first_name>
+        <northwind:job_title>Sales Representative</northwind:job_title>
+        <northwind:last_name>Davolio</northwind:last_name>
+        <northwind:title_of_courtesy>Ms.</northwind:title_of_courtesy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#employee2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#employee2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee"/>
+        <northwind:birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1952-02-19T00:00:00</northwind:birth_date>
+        <northwind:employee_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</northwind:employee_id>
+        <northwind:first_name>Andrew</northwind:first_name>
+        <northwind:job_title>Vice President, Sales</northwind:job_title>
+        <northwind:last_name>Fuller</northwind:last_name>
+        <northwind:title_of_courtesy>Dr.</northwind:title_of_courtesy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#employee3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#employee3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Employee"/>
+        <northwind:reportsto rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#employee3"/>
+        <northwind:birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1963-08-30T00:00:00</northwind:birth_date>
+        <northwind:employee_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</northwind:employee_id>
+        <northwind:first_name>Janet</northwind:first_name>
+        <northwind:job_title>Sales Representative</northwind:job_title>
+        <northwind:last_name>Leverling</northwind:last_name>
+        <northwind:title_of_courtesy>Ms.</northwind:title_of_courtesy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Product"/>
+        <northwind:belongsto rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category1"/>
+        <northwind:product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</northwind:product_id>
+        <northwind:product_name>Chai</northwind:product_name>
+        <northwind:quantity_per_unit>10 boxes x 30 bags</northwind:quantity_per_unit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Product"/>
+        <northwind:belongsto rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category2"/>
+        <northwind:product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</northwind:product_id>
+        <northwind:product_name>Chang</northwind:product_name>
+        <northwind:quantity_per_unit>24 - 12 oz bottles</northwind:quantity_per_unit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Product"/>
+        <northwind:belongsto rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#category3"/>
+        <northwind:product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</northwind:product_id>
+        <northwind:product_name>Aniseed Syrup</northwind:product_name>
+        <northwind:quantity_per_unit>12 - 550 ml bottles</northwind:quantity_per_unit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#supplier1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#supplier1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Supplier"/>
+        <northwind:supplies rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product1"/>
+        <northwind:company_name>Exotic Liquids</northwind:company_name>
+        <northwind:supplier_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</northwind:supplier_id>
+        <northwind:website>Mayumi&apos;s (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/mayumi.htm#</northwind:website>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#supplier2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#supplier2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Supplier"/>
+        <northwind:supplies rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product2"/>
+        <northwind:company_name>New Orleans Cajun Delights</northwind:company_name>
+        <northwind:supplier_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</northwind:supplier_id>
+        <northwind:website>#CAJUN.HTM#</northwind:website>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#supplier3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#supplier3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#Supplier"/>
+        <northwind:supplies rdf:resource="http://www.semanticweb.org/vinod/ontologies/2026/6/northwind#product3"/>
+        <northwind:company_name>Plutzer Lebensmittelgroßmärkte AG</northwind:company_name>
+        <northwind:supplier_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</northwind:supplier_id>
+        <northwind:website>Plutzer (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/plutzer.htm#</northwind:website>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
